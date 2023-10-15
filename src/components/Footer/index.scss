@@ -1,0 +1,54 @@
+.footer{
+    background-color: #19191C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    .f_i:nth-child(1){
+        background: url('@/assets/images/f_twitter.png') no-repeat;
+        background-size: cover;
+        &:hover{
+        background: url('@/assets/images/f_twitter_i.png') no-repeat;
+        background-size: cover;
+        }
+    }
+
+    .f_i:nth-child(2){
+        background: url('@/assets/images/f_game.png') no-repeat;
+        background-size: cover;
+        &:hover{
+        background: url('@/assets/images/f_game_i.png') no-repeat;
+        background-size: cover;
+        }
+    }
+
+
+    .f_i:nth-child(3){
+        background: url('@/assets/images/f_phone.png') no-repeat;
+        background-size: cover;
+        &:hover{
+        background: url('@/assets/images/f_phone_i.png') no-repeat;
+        background-size: cover;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .footer{
+        height: 175px;
+    }
+    .f_i{
+        margin: 0 36px;
+        width: 78px;
+        height: 78px;
+    }
+}
+@media screen and (min-width: 0px) and (max-width:1200px){
+    .footer{
+        height:85px;
+    }
+    .f_i{
+        margin: 0 18px;
+        width: 39px;
+        height: 39px;
+    }
+}

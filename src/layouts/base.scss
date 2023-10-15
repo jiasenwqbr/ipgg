@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media screen and (min-width: 1200px){
+    .header-phone{
+        display: none;
+    }
+    .header-pc{
+        height: 70px !important;
+        padding: 0 30px !important;
+        width: 100%;
+        font-size: 18px;
+        color: #333;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        overflow: hidden;
+        .logo{
+            width: 67px;
+            height: 56px;
+        }
+        .header-item{
+            color: #212121;
+            cursor: pointer;
+            margin-right: 20px;
+            padding: 2px 12px;
+            font-family: kavoon;
+            font-weight: 400;
+            
+        }
+        .header-r{
+          
+            display: flex;
+            align-items: center;
+            .active{
+               border-bottom: 2px solid #fff !important;
+            }
+            .outItem{
+                margin-right: 32px;
+                color: #fff;
+                cursor: pointer;
+                font-family: hev;
+                font-weight: bold;
+                font-size: 16px;
+                height:32px;
+                box-sizing: border-box;
+                &.selected{
+                    background: #fff;
+                    border-radius:15px;
+                    opacity: 1;
+                }
+            }
+            .i{
+                width: 40px;
+                height: 40px;
+                margin-right: 25px;
+                cursor: pointer;
+            }
+
+            .img_i_1{
+                background-image: url('@/icons/svg/loomee.svg');
+                &:hover{
+                    background-image: url('@/icons/svg/loomee_i.svg');
+                }
+            }
+            .img_i_2{
+                background-image: url('@/icons/svg/twitter.svg');
+                &:hover{
+                    background-image: url('@/icons/svg/twitter_i.svg');
+
+                }
+            }
+            .img_i_3{
+                background-image: url('@/icons/svg/game.svg');
+                &:hover{
+                    background-image: url('@/icons/svg/game_i.svg');
+                }
+            }
+            .img_i_4{
+                background-image: url('@/icons/svg/phone.svg');
+                &:hover{
+                    background-image: url('@/icons/svg/phone_i.svg');
+                }
+            }
+            
+        }
+
+    }
+}
+:deep(.ant-spin-container)::after{
+    background-color: #0A0A11;
+}
+:deep(.ant-layout-header) {
+    line-height:normal;
+}
+
+
+@media screen and (min-width:0px) and (max-width:1200px){
+    .header-pc{
+        display: none;
+    }
+    .header-phone{
+        background: none;
+        padding:10px 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 20;
+        .logo{
+            width: 40px;
+        }
+        .list{
+            width:22px;
+            height:auto;
+        }
+    }
+    .mylist{
+        .title{
+            padding: 30px;
+            text-align: right;
+            border-bottom: 1PX solid #3D3D3D;
+            .colse{
+                width: 20px;
+            }
+        }
+        .ment-item{
+            padding-left: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 18px;
+            color: #fff;
+            height: 80px;
+            border-bottom: 1PX solid #3D3D3D;
+            .item-icon{
+                width:25px;
+                height: 25px;
+                margin-right: 15px;
+            }
+            .name-text{
+                font-family:kavoon;
+            }
+            img{
+                width: 30px;
+                margin-right: 25px;
+            }
+        }
+        
+    }
+}
+
+    
+    
+
+
